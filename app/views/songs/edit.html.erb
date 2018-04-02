@@ -19,7 +19,7 @@
 
   <div class="field<%=' field_with_errors' if @song.errors[:released].any?%>">
     <%= label_tag "song[released]", "Released" %><br>
-    <%= check_box_tag "song[released]",@song.released %>
+    <%= check_box_tag "song[released]",true,@song.released %>
   </div>
 
   <div class="field<%=' field_with_errors' if @song.errors[:released].any?%>">
