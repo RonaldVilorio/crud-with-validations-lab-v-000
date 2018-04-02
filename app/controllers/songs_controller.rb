@@ -1,7 +1,5 @@
 class SongsController < ApplicationController
-  def form
-    find_song
-  end
+   
   def index
     @songs = Song.all
   end
